@@ -163,7 +163,7 @@ public:
 
   void SetPlayer(int player){
     _player=player;
-  };
+  }
 
   int GetPlayer() const{
     return _player;
@@ -263,7 +263,7 @@ private:
 public:
 
   static DataAnalysis* GetData(){
-    DataAnalysis* MyDataAnalysis ;
+    DataAnalysis* MyDataAnalysis;
     if (_MyDataAnalysis_ == 0) {
       _MyDataAnalysis_= new DataAnalysis();
     }
@@ -548,9 +548,6 @@ int main()
   while (1) {
     iter++;
 
-    // Write an action using cout. DON'T FORGET THE "<< endl"
-    // To debug: cerr << "Debug
-    // messages..." << endl;
     Data::GetData ()->DataReading();
     if (iter == 1) {
       DataAnalysis::GetData()->Initialize();
